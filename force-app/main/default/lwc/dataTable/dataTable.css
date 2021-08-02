@@ -1,0 +1,13 @@
+.btnLarge{
+    height: 44px;
+    width: 150px;
+}
+:host{
+    --sds-c-button-brand-color-background:purple;
+    --sds-c-button-radius-border:0.25rem;
+}
+
+.slds-m-left_x-small{
+    height: 65px;
+}
+

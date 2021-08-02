@@ -1,0 +1,9 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<aura:attribute name="myAttribute" type="String"/>
+
+    {!v.myAttribute}
+
+<lightning:recordEditForm objectApiName="Lead" onsubmit="{!c.submit}">
+    <lightning:inputField aura:id="myAtt" fieldName="Company" value="{!v.myAttribute}" label="Attribute" onchange="{!c.myChange}"/>
+</lightning:recordEditForm>
+</aura:component>

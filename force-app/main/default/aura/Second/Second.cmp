@@ -1,0 +1,23 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" 
+                access="global" >
+    <aura:attribute name="firstName" type="String"/>
+    <aura:attribute name="test" type="String"/>
+    <div class="row">
+        <lightning:input id="myAtt" name="input8" value="{! v.firstName }" 
+                         placeholder="type your first name..." 
+                         label="Text field with attribute binding"
+                         onchange="{!c.myChange}"
+                         />
+        <p>
+            FirstName: {! v.firstName }
+        </p>
+    </div>
+     <aura:if isTrue="{!(empty(v.test))}">
+    <div>
+        <ui:inputCheckbox aura:id="checkbox" 
+                          label="Select?" 
+                          change="{!c.onCheck}"/>
+        <p>Selected:</p>
+    </div>
+         </aura:if> 
+</aura:component>

@@ -1,0 +1,16 @@
+.datatable-orange{
+  color:#fff;
+  background-color:#e06000;
+}
+.datatable-orange:hover{
+  color:#000;
+  background-color:#e06000;
+}
+.datatable-green{
+  color:#000;
+  background-color:green;
+}
+.datatable-green:hover{
+  color:#000;
+  background-color:red;
+}

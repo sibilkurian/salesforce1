@@ -1,0 +1,14 @@
+<apex:page controller="test_apex_url">
+    
+    <script language="javascript">
+        function init()
+        {
+         window.open('{!url}','_blank');
+        }
+     </script>
+    <apex:form >  
+    <body onload="init()"> 
+    </body>
+    </apex:form>
+    
+</apex:page>
